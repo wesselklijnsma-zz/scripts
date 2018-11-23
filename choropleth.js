@@ -53,7 +53,7 @@ function listenToChange() {
 // create an observer instance
     var observer = new MutationObserver(function (mutations) {
         // alert('change');
-        console.log(target.textContent);
+        // console.log(target.textContent);
         try {
             geojson.setStyle(style);
             document.querySelector("#max_val").innerHTML = getMax(colors, 'total');
