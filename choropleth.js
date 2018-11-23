@@ -55,8 +55,6 @@ function listenToChange() {
         // alert('change');
         console.log(target.textContent);
         try {
-            colors = JSON.parse(target.textContent);
-            console.log('changed');
             geojson.setStyle(style);
             document.querySelector("#max_val").innerHTML = getMax(colors, 'total');
         } catch (err) {
