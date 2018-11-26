@@ -85,10 +85,10 @@ function listenToChange() {
         // alert('change');
         // console.log(target.textContent);
         try {
-            console.log("change");
+            // console.log("change");
             colors = JSON.parse(target.textContent);
             geojson.setStyle(style);
-            document.querySelector("#max_val").innerHTML = getMax(colors, 'total');
+            document.querySelector("#max_val").textContent = getMax(colors, 'total');
         } catch (err) {
             console.log('error');
             return null;
